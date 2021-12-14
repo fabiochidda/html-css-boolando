@@ -1,0 +1,113 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Container generale sezione prodotti*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Struttura box prodotti */
+.prod-box {
+    height: 769px;
+    width: 480px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    left: 30px;
+}
+
+.prod-images img {
+    width: 448px;
+    height: 669px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 13px;
+    left: 16px; 
+}
+
+.prod-description > * {
+    height: 14px;
+    margin-top: 4px;
+}
+
+.prod-description {
+    width: 448px;
+    height: 63px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+}
+
+.prod-description .prod-name {
+    font-weight: bold;
+}
+
+.prod-description .price-current {
+    font-weight: bold;
+    color: red;
+}
+
+.prod-description .price-old {
+    text-decoration-line: line-through;
+}
+
+/* Tasto favorite */
+.prod-images div.favorite {
+    width: 49px;
+    height: 50px;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    right: 16px;
+    top: 29px;
+}
+
+/* Tag Prodotti */
+.prod-tags {
+    height: 44px;
+    width: 146px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 16px;
+    top: 575px;
+}
+
+.prod-tags > * {
+    text-align: center;
+    position: relative;
+    line-height: 25px;
+    font-size: 14px;
+    display: inline-block;
+    top: 10px;
+    margin-right: 4.6px;
+}
+
+.prod-tags span.discount {
+    height: 25px;
+    width: 37px;
+    background-color: red;
+    color: white;
+}
+
+.prod-tags span.eco {
+    height: 25px;
+    width: 84px;
+    background-color: green;
+    color: white;
+}
+
+/* Hover */
+.prod-images .img-other{
+    display: none;
+}
+
+.prod-images:hover .img-other{
+    display: initial;
+}
